@@ -1,0 +1,36 @@
+﻿@model MaerskWebApp.Models.Schedule
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Schedule</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DepartTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DepartTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ArrivalTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ArrivalTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Vessel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Vessel.VesselID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

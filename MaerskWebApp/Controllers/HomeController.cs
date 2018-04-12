@@ -17,7 +17,7 @@ namespace MaerskWebApp.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Maersk Line";
 
             return View();
         }
